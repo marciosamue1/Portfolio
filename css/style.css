@@ -1,0 +1,219 @@
+/* config universal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* config html e body */
+html, body {
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* config container */
+
+#container {
+    height: 100%;
+    width: 100%;
+    background-color: #f0f0f0;
+    background: linear-gradient(11deg,rgba(0, 0, 0, 1) 0%, rgba(39, 25, 48, 1) 56%, rgba(59, 43, 59, 1) 100%);
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+
+/* config header */
+
+header {
+    height: 400px;
+    width: 400px;
+    background-color: rgb(23, 9, 29);
+    border-radius: 40px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.349);
+}
+
+/* config header imagem */
+
+.imagem {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #9708da;
+    z-index: 20;
+}
+
+.cabeca {
+    height: 40px;
+    width: 40px;
+    background-color: #646464;
+    border-radius: 50%;
+    z-index: -100;
+}
+
+.cabeca::before {
+    content: "";
+    height: 30px;
+    width: 40px;
+    background-color: #646464;
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+    border-radius: 20px;
+    z-index: -101;
+}
+
+
+/* config conteudo */
+
+#conteudo {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.nome {
+    font-size: 1.4em;
+    text-align: center;
+    letter-spacing: 1.6px;
+    font-weight: 600;
+    text-shadow: 4px 2px 2px rgba(60, 3, 107, 0.493);
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.descricao {
+    font-size: 1.4em;
+    text-align: center;
+    letter-spacing: 1.3px;
+    font-weight: 400;
+    text-shadow: 4px 2px 2px rgba(181, 176, 185, 0.171);
+    margin-bottom: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* config button */
+
+#botao {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    left: 25%;
+}
+
+button {
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    outline: none;
+    background: transparent;
+    border: none;
+}
+
+button:hover {
+    animation: text 3s ease-in-out infinite;
+}
+
+@keyframes text {
+    0% {
+        border: 2px solid #341542;
+    }
+
+    25% {
+        border: 2px solid #3b0d5c;
+    }
+
+    30% {
+        border: 2px solid #4b0d6c;
+    }
+
+    35% {
+        border: 2px solid #5b0d7c;
+    }
+
+    40% {
+        border: 2px solid #6b0d8c;
+    }
+
+    45% {
+        border: 2px solid #7b0d9c;
+    }
+
+    50% {
+        border: 2px solid #5f0888;
+    }
+
+    55% {
+        border: 2px solid #4f0978;
+    }
+
+    60% {
+        border: 2px solid #3f0a68;
+    }
+
+    65% {
+        border: 2px solid #2f0b58;
+    }
+
+    70% {
+        border: 2px solid #1f0c48;
+    }
+
+    75% {
+        border: 2px solid #1f0c38;
+    }
+
+    80% {
+        border: 2px solid #351046;
+    }
+
+    85% {
+        border: 2px solid #77004b;
+    }
+
+    90% {
+        border: 2px solid #55185a;
+    }
+
+    95% {
+        border: 2px solid #42034b;
+    }
+
+    100% {
+        border: 2px solid #2a013d;
+    }
+}
+
+/* config a */
+
+button > a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    letter-spacing: 1.2px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    margin-left: 20px;
+    padding-right: 20px;
+}
